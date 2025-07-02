@@ -1,0 +1,29 @@
+pipeline {
+  agent any
+  stages {
+    stage('Build') {
+      steps {
+        sh 'docker build -t 3d-marketplace .'
+      }
+    }
+    stage('Test') {
+      steps {
+        echo 'Running tests...'
+        sh 'pytest tests/'
+      }
+    }
+    stage('Push') {
+      steps {
+        withCredentials([usernamePassword(credentialsId: 'dockerhub-creds', passwordVariable: 'PASS', usernameVariable: 'USER')]) {
+          sh 'docker login -u $USER -p $PASS'
+          sh 'docker push 3d-marketplace'
+        }
+      }
+    }
+    stage('Deploy') {
+      steps {
+        sh 'kubectl apply -f k8s/deployment.yaml'
+      }
+    }
+  }
+}
