@@ -41,12 +41,6 @@ infra-automation-3d-marketplace/
 
 ---
 
-## 📷 Architecture Diagram
-
-![Architecture](architecture.png)
-
----
-
 ## ▶️ How to Deploy
 
 ```bash
