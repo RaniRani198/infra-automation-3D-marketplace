@@ -2,9 +2,7 @@
 
 This project showcases a real-world simulation of automating the infrastructure for a **3D Construction Equipment Marketplace**, deployed on **AWS** using **Terraform**, **Kubernetes**, **Jenkins**, **ArgoCD**, and fully observable with **Prometheus** and **Grafana**.
 
-> ✅ Built for DevOps, SRE, and Cloud roles with a focus on infrastructure-as-code, CI/CD, GitOps, and containerized deployments.
 
----
 
 ## 📌 Tech Stack
 
