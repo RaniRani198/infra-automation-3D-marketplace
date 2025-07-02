@@ -1,6 +1,6 @@
 # 🏗️ Infrastructure Automation – 3D Construction Marketplace
 
-This project showcases a real-world simulation of automating the infrastructure for a **3D Construction Equipment Marketplace**, deployed on **AWS** using **Terraform**, **Kubernetes**, **Jenkins**, **ArgoCD**, and fully observable with **Prometheus** and **Grafana**.
+This project showcases a real-world simulation of automating the infrastructure for a **3D Construction Equipment Marketplace**, deployed on **AWS** using **Terraform**, **Kubernetes**, **Jenkins**, **ArgoCD** and fully observable with **Prometheus** and **Grafana**.
 
 
 
